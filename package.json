@@ -1,0 +1,24 @@
+{
+  "name": "projetonodejs",
+  "version": "1.0.0",
+  "description": "Projeto da RocketSeat feita com o Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabbzin/projetoNodeJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gabbzin/projetoNodeJS/issues"
+  },
+  "homepage": "https://github.com/gabbzin/projetoNodeJS#readme",
+  "dependencies": {
+    "fastify": "^5.5.0"
+  }
+}
