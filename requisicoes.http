@@ -1,0 +1,14 @@
+POST http://localhost:3333/courses
+Content-Type: application/json
+
+{
+  "title": "Curso de Flutter"
+}
+
+###
+
+GET http://localhost:3333/courses?orderBy=title
+
+###
+
+GET http://localhost:3333/courses/9c62c1b0-d693-4ed4-9815-ea06db9cb2c1

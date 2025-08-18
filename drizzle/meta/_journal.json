@@ -15,6 +15,13 @@
       "when": 1755121004010,
       "tag": "0001_jittery_darkhawk",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1755539827148,
+      "tag": "0002_small_molly_hayes",
+      "breakpoints": true
     }
   ]
 }

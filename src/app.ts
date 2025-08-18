@@ -7,9 +7,9 @@ import {
     jsonSchemaTransform,
 } from "fastify-type-provider-zod";
 import fastifySwagger from "@fastify/swagger";
-import { createCourseRoute } from "./src/routes/create-course.ts";
-import { getCoursesRoute } from "./src/routes/get-courses.ts";
-import { getCoursesByIdRoute } from "./src/routes/get-course-by-id.ts";
+import { createCourseRoute } from "./routes/create-course.ts";
+import { getCoursesRoute } from "./routes/get-courses.ts";
+import { getCoursesByIdRoute } from "./routes/get-course-by-id.ts";
 
 const server = fastify({
     logger: {
@@ -49,10 +49,10 @@ if (process.env.NODE_ENV === "development") {
 server.setSerializerCompiler(serializerCompiler);
 server.setValidatorCompiler(validatorCompiler);
 
+// Cada register demora um pouquinho pra executar
+
 server.register(createCourseRoute);
 server.register(getCoursesRoute);
 server.register(getCoursesByIdRoute);
 
-server.listen({ port: 3333 }).then(() => {
-    console.log("HTTP server running!");
-});
+export default server;
